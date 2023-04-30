@@ -1,7 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0 auto;
     width: 75%;
+}
+
+.form-container {
     text-align: center;
+    margin: 2 rem auto;
 }
 
 .movie-data-list {
@@ -19,6 +29,10 @@ img {
 }
 
 form {
-    width: 75%;
+    width: 75%; 
     margin: 0 auto;
+}
+
+.result-container {
+    text-align: center;
 }

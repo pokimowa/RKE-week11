@@ -21,7 +21,7 @@ app.post('/search', (req, res) => {
     axios.all(endpoints.map((endpoint) => axios.get(endpoint)))
     .then(
         axios.spread((movie, genres) => {
-            const movieRaw = movie.data.results;
+            const [movieRaw] = movie.data.results;
             const movieGenreIds = movieRaw.genre_ids;        
             const movieGenres = genres.data.genres; 
             
